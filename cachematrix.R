@@ -1,14 +1,16 @@
+#function for geting inverse of a vector
+ 
 makeCacheMatrix <- function(x = matrix()) {
-        m <- NULL 
+        m <- NULL #create an empty matrix and creat 4 functions
         set <- function(y) {
                 x <<- y 
                 m <<- NULL 
         } 
         get <- function() x 
-        setinv <- function(solve) m <<- solve 
+        setinv <- function(solve) m <<- solve #setinv to use the solve function
         getinv <- function() m 
         list(set = set, get = get, setinv = setinv, 
-            getinv = getinv) 
+            getinv = getinv) #show all fxs as list
 } 
 
 #ya#
